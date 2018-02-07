@@ -1,25 +1,24 @@
 
-	import java.util.*;
+  import java.util.*;
   import java.io.*;
   import java.lang.*;//standalone
 
 public class Setuid implements DataImple,Date_cur{
-	  private static ObjectOutputStream out_data;
+    private static ObjectOutputStream out_data;
     private static FileOutputStream fos;
     private static int count;
     
     public static  String send_args;
+	  
+	static {
+      if(!path.exists()) 
+	 path.mkdirs();
 
-    
-	  static {
-		 if(!path.exists()) 
-			 path.mkdirs();
-
-     if(!ver.exists())
-       ver.mkdirs();
+      if(!ver.exists())
+        ver.mkdirs();
   
      if(!Uid_Dir.getParentFile().exists())
-       Uid_Dir.getParentFile().mkdirs();
+        Uid_Dir.getParentFile().mkdirs();
 
      for(File t : ver.listFiles())
        if(t.isFile())

@@ -79,7 +79,7 @@
 
 	    //try
 			try {
-        ps =Runtime.getRuntime().exec(cmd);
+        			ps =Runtime.getRuntime().exec(cmd);
 				in_read = new InputStreamReader(ps.getInputStream());
 				bf = new BufferedReader(in_read);
 				

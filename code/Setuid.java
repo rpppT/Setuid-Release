@@ -50,7 +50,7 @@ public static void Save_Instance() {
        fos.close();
       ////////////////////////////////
 			 out_data = new ObjectOutputStream(new FileOutputStream(String.valueOf(path.getCanonicalPath()+"/log_"+t_crease)));
-		   out_data.writeObject(Search.renewal());
+		   	 out_data.writeObject(Search.renewal());
 			 out_data.close();//close
 		 }catch(Exception e) {
 			 e.printStackTrace();
@@ -59,9 +59,10 @@ public static void Save_Instance() {
 	 
 	 public static void main(String[] args) {
 		if(args.length==2) {
-        send_args = args[1];
-				if(args[0].equalsIgnoreCase("setuid")){
-				 Search.getInstance().Search_Setuid(args[1]);
+        		send_args = args[1];
+			
+		if(args[0].equalsIgnoreCase("setuid")){
+		       Search.getInstance().Search_Setuid(args[1]);
 	      }
 			}else{
 	      Search.renewal().add(ANSI_PURPLE+"args.length is over than 2 or lower than 2"+ANSI_RESET);

@@ -32,7 +32,7 @@
 	        for(int i=0; i<size; i++)
 	        {
 	          if((per_str = file_list.get(i).split("\\s+")[0]).contains("s") || (per_str = file_list.get(i).split("\\s+")[0]).contains("S")){
-              Send_Dir_s = Setuid.send_args;//reference
+              	    Send_Dir_s = Setuid.send_args;//reference
 	            Setuid_Dir.Save_args(Send_Dir_s);
 	            data_set.add(String.valueOf(ANSI_CYAN+"[Setuid] : "+ANSI_RESET+file_list.get(i)+ANSI_RESET));
 	            System.out.println(ANSI_RED+"permission["+(i)+"] : "+per_str+ANSI_RESET);
@@ -87,7 +87,7 @@
 					file_list.add(temp);
 				}
 
-	      this.new Access2_find().check_str();
+	      			this.new Access2_find().check_str();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}//catch

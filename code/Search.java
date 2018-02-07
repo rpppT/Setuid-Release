@@ -20,7 +20,7 @@
 		private InputStreamReader in_read;
 		private BufferedReader bf;
 		private final ArrayList<String> file_list = new ArrayList<>();
-    private static String Send_Dir_s;
+    		private static String Send_Dir_s;
 
 	  public class Access2_find {
 	    public void check_str() 

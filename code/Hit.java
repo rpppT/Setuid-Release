@@ -33,7 +33,6 @@ public class Hit{
 	}
 	public Hit() {
 		this.new Main_Hit();
-		//Hit_Rate();
 	}
 	public static void main(String[] args) {
 	    new Hit();

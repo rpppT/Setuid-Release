@@ -10,7 +10,7 @@ public class Setuid implements DataImple,Date_cur{
     
     public static  String send_args;
 	  
-	static {
+static {
       if(!path.exists()) 
 	 path.mkdirs();
 

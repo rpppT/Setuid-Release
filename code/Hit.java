@@ -30,22 +30,6 @@ public class Hit{
 			System.out.println("\nEntire Object : "+data_list.size());
 		}
 		
-		/*public void Hit_Rate() {
-			for(int i=0; i<data_list.size(); i++) {
-				String temp = data_list.get(i);
-				int count = 0;
-				
-				set.add(data_list.get(i));
-				for(int j=i+1; j<data_list.size(); j++) {
-					boolean bool  = set.add(data_list.get(i));
-					  if(!bool) {
-						  count++;
-					  }//if
-				}//for		
-				obj_count.add(data_list.get(i)+" ==> "+count);
-			}
-			System.out.println(obj_count);
-		}*/
 	}
 	public Hit() {
 		this.new Main_Hit();

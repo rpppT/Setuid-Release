@@ -38,8 +38,9 @@ public class Setuid implements DataImple,Date_cur{
      Show_Uid.Read_Uid();
     }
 
-	 public static void Save_Instance() {
-		 try {			 
+public static void Save_Instance() {
+    try {			 
+      
       String  buf = ver.getAbsolutePath()+"/"+count;
       File file_t = new File(buf);
 
